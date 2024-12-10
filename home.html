@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number System Conversion Calculator</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f8e1f4, #d0f0fd); /* Light pink to soft blue gradient */
+            color: #333333;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background-color: #fce1f0; /* Soft pink */
+            padding: 20px;
+            border-bottom: 3px solid #ffb3c6;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: #ff80c0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #3399cc;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #fce1f0;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #3399cc;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            background-color: #3399cc;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            background: #e6f7ff; /* Soft blue background */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro h2 {
+            margin: 0;
+            color: #ff80c0;
+        }
+
+        .intro p {
+            font-size: 1em;
+            color: #333333;
+        }
+
+        /* Number Conversion Table */
+        .table-container {
+            margin: 30px auto;
+            padding: 20px;
+            background: #fce1f0; /* Soft pink */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-container h3 {
+            text-align: center;
+            color: #ff80c0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #f1b3c0;
+        }
+
+        th {
+            background-color: #3399cc;
+            color: #ffffff;
+        }
+
+        td {
+            background-color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #fce1f0;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #3399cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            background-color: #3399cc;
+            padding: 3px 6px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Number System Conversion Calculator</h1>
+        <p>Convert between Binary, Decimal, Octal, and Hexadecimal with ease!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Calculator</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to the Number System Conversion Calculator</h2>
+            <p>This tool helps you quickly convert numbers between different number systems, including Binary, Decimal, Octal, and Hexadecimal. Whether you're learning about computer science or simply need a quick conversion, this is the perfect tool for you!</p>
+        </section>
+
+        <section class="table-container">
+            <h3>Number Conversion Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Decimal</th>
+                        <th>Binary</th>
+                        <th>Octal</th>
+                        <th>Hexadecimal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>11</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>100</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>101</td>
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>1010</td>
+                        <td>12</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>1111</td>
+                        <td>17</td>
+                        <td>F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Number System Conversion Calculator. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
